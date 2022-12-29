@@ -46,6 +46,16 @@
     header-drawer {
       display: none;
     }
+
+    .header {
+      grid-template:
+        [row1-start] "heading heading heading" 12rem [row1-end]
+        [row2-start] "navigation navigation icons" 2rem [row2-end] / auto 80% auto;
+    }
+
+    .header__heading {
+      justify-self: center;
+    }
   }
 
   .menu-drawer-container {
