@@ -105,6 +105,19 @@
             <div class="banner__text {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
               <span>{{ block.settings.text | escape }}</span>
             </div>
+            
+            <div style="display: flex; justify-content: space-around;">
+              <div style="border: 2px solid black; padding: 2rem;">
+                Product One
+              </div>
+              <div style="border: 2px solid white; padding: 2rem;">
+                Product Two
+              </div>
+              <div style="border: 2px solid red; padding: 2rem;">
+                Product Three
+              </div>
+            </div>
+            
           {%- when 'buttons' -%}
             <div
               class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}"
