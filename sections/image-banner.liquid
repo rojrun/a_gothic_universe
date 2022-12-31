@@ -151,6 +151,16 @@
           Product Three
         </div>
       </div>
+      <a
+        {% if block.settings.button_link_1 == blank %}
+          role="link" aria-disabled="true"
+        {% else %}
+          href="{{ block.settings.button_link_1 }}"
+        {% endif %}
+        class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}"
+      >
+        Shop all witch products
+      </a> 
     </div>
     <div class="banner__box content-container color-background-1 gradient" style="border: 2px solid black; width: 95%; margin: 1rem;">
       <h2>Anime Ichiba</h2>
