@@ -234,6 +234,7 @@
 }
 
 .banner__content {
+  flex-direction: column;
   padding: 0;
   display: flex;
   position: relative;
