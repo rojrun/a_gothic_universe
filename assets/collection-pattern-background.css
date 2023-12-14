@@ -1,0 +1,42 @@
+.background-pattern {
+  background-repeat: repeat;
+  background-size: 93px;
+}
+
+.the-universe, .all {
+  background-image: url("https://cdn.shopify.com/s/files/1/0589/4995/9873/files/main_collection_background.png?v=1692566687");
+}
+
+.the-witches-corner {
+  background-image: url("https://cdn.shopify.com/s/files/1/0589/4995/9873/files/witch-hat.png?v=1692326466");
+}
+
+.a-geeks-realm {
+  background-image: url("https://cdn.shopify.com/s/files/1/0589/4995/9873/files/kuromi.png?v=1692398542");
+}
+
+.night-terrors {
+  background-image: url("https://cdn.shopify.com/s/files/1/0589/4995/9873/files/skeleton.png?v=1692399981");
+}
+
+.pothead-paradise {
+  background-image: url("https://cdn.shopify.com/s/files/1/0589/4995/9873/files/weed.png?v=1692398542");
+}  
+
+@media only screen and (min-width: 768px) {
+  .background-pattern {
+    background-size: 84px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .background-pattern {
+    background-size: 72px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .background-pattern {
+    background-size: 65px;
+  }
+}

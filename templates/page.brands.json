@@ -1,0 +1,27 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 4
+      }
+    },
+    "13130471-f5b5-41fe-b77a-0920e731f9b2": {
+      "type": "dynamic-vendor-collection-list",
+      "settings": {
+        "image_ratio": "square",
+        "columns_desktop": 5,
+        "color_scheme": "background-1",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 16
+      }
+    }
+  },
+  "order": [
+    "main",
+    "13130471-f5b5-41fe-b77a-0920e731f9b2"
+  ]
+}

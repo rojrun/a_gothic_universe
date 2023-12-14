@@ -1,0 +1,17 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-register",
+      "custom_css": [
+        ".customer button {color: #ffffff; border: 1px solid #ffffff;}"
+      ],
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

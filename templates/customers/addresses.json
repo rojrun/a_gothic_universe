@@ -1,0 +1,18 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-addresses",
+      "custom_css": [
+        "button {border: 1px solid #ffffff; color: #ffffff;}",
+        "button:hover {border: 2px solid #ffffff;}"
+      ],
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
