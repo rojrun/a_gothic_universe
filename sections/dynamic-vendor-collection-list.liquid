@@ -27,7 +27,7 @@
   endif
 -%}
 
-<div class="color-{{ section.settings.color_scheme }} gradient{% if page.handle == 'brands' %} background-pattern the-universe{% endif %}">
+<div class="color-{{ section.settings.color_scheme }} gradient background-pattern the-universe">
   <div class="collection-list-wrapper page-width isolate{% if show_mobile_slider %} page-width-desktop{% endif %}{% if section.settings.title == blank %} no-heading{% endif %}{% if section.settings.show_view_all == false or section.blocks.size > collections.size %} no-mobile-link{% endif %} section-{{ section.id }}-padding">
     {%- unless section.settings.title == blank -%}
       <div class="title-wrapper-with-link{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% else %} title-wrapper--self-padded-mobile{% endif %} title-wrapper--no-top-margin">
@@ -52,12 +52,10 @@
         -%}
         {%- for vendor in shop.vendors -%}
           {% assign vendor_handle = vendor | handle %}
-          {% if collections[vendor_handle].published_at != nil and collections[vendor_handle].products_count > 0 %}
+          {% if collections[vendor_handle].published_at != nil %}
             <li id="Slide-{{ section.id }}-{{ forloop.index }}" class="collection-list__item grid__item{% if show_mobile_slider %} slider__slide{% endif %}{% if collections[vendor_handle].featured_image == nil %} collection-list__item--no-media{% endif %}">
               {% render 'card-collection', card_collection: collections[vendor_handle], media_aspect_ratio: section.settings.image_ratio, columns: columns %}
             </li>
-          {% else %}
-            <script>console.log("Add new collection: ", "{{ vendor }}");</script>
           {% endif %}    
         {%- endfor -%}
       </ul>
